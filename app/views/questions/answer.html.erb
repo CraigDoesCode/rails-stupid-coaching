@@ -1,11 +1,11 @@
-<div class="container">
-  <div class="coach-chat">
+<div class="container my-5">
+  <div class="coach-question p-1 rounded w-25">
     <p><%= @question %></p>
-    <p>-you</p>
+    <p><em>-you</em></p>
   </div>
-  <div class="coach-chat">
+  <div class="coach-answer p-1 rounded w-25">
     <p><%= @response %></p>
     <p>-coach</p>
   </div>
-  <%= link_to "Ask a new question", ask_path %>
+  <%= link_to "Ask a new question", ask_path, :class => "btn btn-success" %>
 </div>

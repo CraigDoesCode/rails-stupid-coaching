@@ -1,8 +1,8 @@
-<div class="text-center container d-flex justify-content-center align-items-center my-10">
+<div class="text-center container d-flex justify-content-center align-items-center my-10" id="question-form">
   <form action="/answer"  method="get">
-    <div class="form-group">
-      <input class="form-control" type="text" name="question" placeholder="Ask coach a question" value= <%=@query%>>
-      <input class="btn btn-primary my-3" type="submit" value="ask">
+    <div class="form-group my-5">
+      <input class="form-control" type="text" name="question" placeholder="Ask coach a question" id="input" value= '<%=@query%>' >
+      <input class="btn btn-primary my-3" type="submit" value="Ask!">
     </div>
   </form>
 </div>
